@@ -8,7 +8,7 @@ grep -i uhid /boot/config-5.15.147-sun55iw3
 # CONFIG_UHID is not set
 ```
 ## Observation
-My MIcrosoft mouse as well as A4Tech mouse are not working. THey get connected / paired but zero functionality. Checking the system logs, I found the following clue:
+My Microsoft mouse as well as A4Tech mouse are not working. THey get connected / paired but zero functionality. Checking the system logs, I found the following clue:
 ```
 [bluetoothd] input-hog profile accept failed for XX:XX:XX:XX:XX:XX
 ```
