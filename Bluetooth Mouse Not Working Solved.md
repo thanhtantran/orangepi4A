@@ -23,6 +23,7 @@ sudo nano orangepi-build/userpatches/config-default.conf
 IGNORE_UPDATES="yes"
 ```
 After making this change, recompiling the kernel and rebooting the M585 pairs and works properly as a mouse. Additionally, the MS Bluetooth Mobile Mouse 3600 now works properly as well.
+Prebuilt *.debs https://github.com/defencedog/orangepi4A/tree/main/kernels
 ## Solutions that didn't work
 - https://groups.google.com/g/linux.debian.bugs.dist/c/CBVXtXabWl8?pli=1
 - https://github.com/bluez/bluez/issues/531#issuecomment-1913058753
