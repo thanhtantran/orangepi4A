@@ -31,3 +31,5 @@ echo "blacklist hidp" | sudo tee /etc/modprobe.d/blacklist-hidp.conf
 echo -e  "# Fix BLE mouse issue\nuhid" | sudo tee /etc/modules-load.d/uhid.conf
 sudo sed -ie "s:.*UserspaceHID=.*:UserspaceHID=true:" /etc/bluetooth/input.conf
 ```
+## Tip
+Disable _Natural Scroling_ in Ubuntu settings; I faced mouse scroll reversed!
