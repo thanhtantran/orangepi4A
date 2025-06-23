@@ -8,3 +8,6 @@ These `.debs` can be installed as I have included multiple missing features. In 
 > https://github.com/defencedog/orangepi3b_v2.1/blob/main/SAMBA_NAS_Videos.md
 
 These kernerls can be used with official `jammy` image v1.0.4
+
+## Update #1
+Packages have been updated to resolve bluetoth connectivity issue with mouse / keyboards because of the absence of `UHID` module
