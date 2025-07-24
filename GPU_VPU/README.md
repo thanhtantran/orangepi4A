@@ -55,3 +55,15 @@ Video information can be retrieved via `gst-discoverer-1.0 <video>`
 - Clapper a headache to build can be installed via this [ppa](https://launchpad.net/~liujianfeng1994/+archive/ubuntu/rockchip-multimedia/)
 At its launch navigate _Preferences>Tweaks>Plugin Ranking_ Scroll down to _omx_ & enable all; a default ranking of 257 will be shown. Restart Clapper
 - Currently unable to build [Glide](https://github.com/philn/glide/issues/134)
+- `parole` player gave me _Segmentation fault_ when installed from official repos. I was able to build & run it via
+```
+git clone https://gitlab.xfce.org/apps/parole
+cd parole
+sudo apt install libdbus-glib-1-dev libxfce4ui-2-dev librga-dev libtagc0-dev libnotify-dev
+meson setup build --reconfigure
+meson compile -C build
+meson install -C build
+```
+Navigate to _Preferences>Display_ & choose _X11/XShm/Xv_ After restart of `parole` it uses HW-acceleration but video windows is separated from main GUI?? It has no wayland support yet I believe
+
+If video player is using hardware acceleration you can check it by `sudo journalctl -f | grep cedar`
