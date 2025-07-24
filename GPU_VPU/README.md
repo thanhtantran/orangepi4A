@@ -30,7 +30,7 @@ $ sudo dmesg | grep cedar
 ## Github Links
 - GPU VPU configuration files, must be present in your OS https://github.com/orangepi-xunlong/orangepi-build/tree/next/external/packages/bsp/t527/etc
 - **iMPORTANT** Prebuilt *.deb files for GPU & VPU https://github.com/orangepi-xunlong/rk-rootfs-build/tree/t527_packages/jammy
-For VPU the most important package is `gstreamer1.0-omx.deb` refer to this dicussion https://github.com/orangepi-xunlong/orangepi-build/issues/244
+For VPU the most important package is `gstreamer1.0-omx.deb` refer to this discussion https://github.com/orangepi-xunlong/orangepi-build/issues/244
 ## VPU Codecs Support
 HDR files are not supported as well as HEVC 10bit
 Required packages `sudo apt-get install gstreamer1.0 gstreamer1.0-tools` You can install additional codecs `sudo apt install gstreamer1.0-plugins-{base,good,bad}` but **never** install `*-omx-generic*` packages
@@ -49,5 +49,9 @@ omx:  omxmpeg4videodec: OpenMAX MPEG4 Video Decoder
 omx:  omxvp8videodec: OpenMAX VP8 Video Decoder
 omx:  omxvp9videodec: OpenMAX VP9 Video Decoder
 ```
-## Gstreamer Video Players
-Command line player with very absolutely no GUI is `gst123` More about its usage 
+## Gstreamer HW-accelerated Video Players
+Video information can be retrieved via `gst-discoverer-1.0 <video>`
+- Command line player with very absolutely no GUI is `gst123` More about its usage [read here](https://www.systutorials.com/docs/linux/man/1-gst123/)
+- Clapper a headache to build can be installed via this [ppa](https://launchpad.net/~liujianfeng1994/+archive/ubuntu/rockchip-multimedia/)
+At its launch navigate _Preferences>Tweaks>Plugin Ranking_ Scroll down to _omx_ & enable all; a default ranking of 257 will be shown. Restart Clapper
+- Currently unable to build [Glide](https://github.com/philn/glide/issues/134)
