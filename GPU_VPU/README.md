@@ -54,6 +54,7 @@ Video information can be retrieved via `gst-discoverer-1.0 <video>`
 - Command line player with very absolutely no GUI is `gst123` More about its usage [read here](https://www.systutorials.com/docs/linux/man/1-gst123/)
 - Clapper a headache to build can be installed via this [ppa](https://launchpad.net/~liujianfeng1994/+archive/ubuntu/rockchip-multimedia/)
 At its launch navigate _Preferences>Tweaks>Plugin Ranking_ Scroll down to _omx_ & enable all; a default ranking of 257 will be shown. Restart Clapper
+- `totem` is another good choice, available in default repos
 - Currently unable to build [Glide](https://github.com/philn/glide/issues/134)
 - `parole` player gave me _Segmentation fault_ when installed from official repos. I was able to build & run it via
 ```
