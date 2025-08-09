@@ -29,8 +29,8 @@ $ sudo dmesg | grep cedar
 ```
 ## Github Links
 - GPU VPU configuration files, must be present in your OS https://github.com/orangepi-xunlong/orangepi-build/tree/next/external/packages/bsp/t527/etc
-- **iMPORTANT** Prebuilt *.deb files for GPU & VPU https://github.com/orangepi-xunlong/rk-rootfs-build/tree/t527_packages/jammy
-For VPU the most important package is `gstreamer1.0-omx.deb` refer to this discussion https://github.com/orangepi-xunlong/orangepi-build/issues/244
+- **IMPORTANT** Prebuilt *.deb files for GPU & VPU https://github.com/orangepi-xunlong/rk-rootfs-build/tree/t527_packages/jammy
+For VPU the most important packages are `gstreamer1.0-omx.deb` & `libcedarc_1.0_arm64.deb` refer to this discussion https://github.com/orangepi-xunlong/orangepi-build/issues/244
 ## VPU Codecs Support
 HDR files are not supported as well as HEVC 10bit
 Required packages `sudo apt-get install gstreamer1.0 gstreamer1.0-tools` You can install additional codecs `sudo apt install gstreamer1.0-plugins-{base,good,bad}` but **never** install `*-omx-generic*` packages
