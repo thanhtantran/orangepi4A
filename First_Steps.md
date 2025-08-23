@@ -19,6 +19,7 @@ Look at these files `nano if there is any orangepi entry`
 
 Finally 
 ```
+passwd #change desired root password
 desktop_login.sh ukhan
 reboot
 ```
