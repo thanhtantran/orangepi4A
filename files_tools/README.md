@@ -6,9 +6,8 @@ Main repo
 
 then install 
 ```
-sudo apt install
+sudo apt install -y libsqlite3-dev libxcb-cursor0
 # edit .desktop file to change locations
 gio launch sqlitestudio.desktop #verify its running
 sudo cp sqlitestudio.desktop /usr/local/share/applications/
-sudo apt install -y libsqlite3-dev
 ```
