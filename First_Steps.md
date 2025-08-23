@@ -26,6 +26,7 @@ reboot
 ```
 Next session will be under ukhan user. In Ubuntu system settings > users > manually edit orangepi to ukhan. Use `passwd` to set new user password
 ## Preparing GNOME
+Download & `dpkg -i` all `deb` files from https://github.com/defencedog/orangepi4A/tree/main/kernels
 ```
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager dconf-editor gnome-terminal -y
