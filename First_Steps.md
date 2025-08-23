@@ -5,6 +5,7 @@ sudo auto_login_cli.sh root
 sudo desktop_login.sh root
 sudo reboot
 # next login will be in root session
+passwd #follow prompts to change root password
 groupmod -n ukhan orangepi
 usermod -d /home/ukhan -m -g ukhan -l ukhan orangepi
 reboot
@@ -21,6 +22,7 @@ Finally
 ```
 passwd #change desired root password
 desktop_login.sh ukhan
+passwd #follow prompts to change ukhan password
 reboot
 ```
 Next session will be under ukhan user. In Ubuntu system settings > users > manually edit orangepi to ukhan. Use `passwd` to set new user password
