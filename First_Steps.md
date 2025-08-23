@@ -57,7 +57,7 @@ sudo apt install clapper ffmpeg mpv chromium chrome-browser libv4l-rkmpp gstream
 ## Libreoffice Latest
 ```
 sudo add-apt-repository ppa:libreoffice/ppa
-sudo apt install libreoffice libreoffice-gnome libreoffice-gtk3 libreoffice-style-yaru
+sudo apt install libreoffice libreoffice-gnome libreoffice-gtk3 libreoffice-style-yaru libreoffice-java-common libreoffice-script-provider-python python3-scriptforge open-jdk-8-jre 
 ````
 ## Old chromium extensions
 The HW accelerate `chromium (126)` or `chrome-browser (114)` packages are in [ppa:rockchip-multimedia](https://launchpad.net/~liujianfeng1994/+archive/ubuntu/rockchip-multimedia/?field.series_filter=jammy)
