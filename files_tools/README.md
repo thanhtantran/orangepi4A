@@ -1,4 +1,5 @@
-# SqliteStudio for Ubuntu Jammy
+# Files & executables for Jammy Ubuntu
+## SqliteStudio for Ubuntu Jammy
 
 Main repo
 > https://github.com/john-black-3k/sqlitestudio-linux-arm64
