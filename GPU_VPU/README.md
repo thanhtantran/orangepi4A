@@ -33,7 +33,8 @@ $ sudo dmesg | grep cedar
 For VPU the most important packages are `gstreamer1.0-omx.deb` & `libcedarc_1.0_arm64.deb` refer to this discussion https://github.com/orangepi-xunlong/orangepi-build/issues/244
 ## VPU Codecs Support
 HDR files are not supported as well as HEVC 10bit
-Required packages `sudo apt-get install gstreamer1.0 gstreamer1.0-tools` You can install additional codecs `sudo apt install gstreamer1.0-plugins-{base,good,bad}` but **never** install `*-omx-generic*` packages
+
+Required packages ~`sudo apt-get install gstreamer1.0 gstreamer1.0-tools`~ You can install additional codecs `sudo apt install gstreamer1.0-plugins-{base,good,bad}` but **never** install `*-omx-generic*` packages
 ```
 $ gst-inspect-1.0 | grep omx
 libav:  avenc_h264_omx: libav OpenMAX IL H.264 video encoder encoder
