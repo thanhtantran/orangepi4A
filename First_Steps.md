@@ -26,7 +26,6 @@ reboot
 ```
 Next session will be under ukhan user. In Ubuntu system settings > users > manually edit orangepi to ukhan. Use `passwd` to set new user password
 ## Preparing GNOME
-Download & `dpkg -i` all `deb` files from https://github.com/defencedog/orangepi4A/tree/main/kernels
 ```
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager dconf-editor gnome-terminal -y
@@ -35,6 +34,7 @@ sudo apt install sudo apt install gnome-tweaks gnome-shell-extensions gnome-shel
 Use `dconf-editor`
 > https://unix.stackexchange.com/questions/490847/set-static-number-of-workspaces-in-gnome-shell-with-dconf
 ## SAMBA support
+Download & `dpkg -i` all `deb` files from https://github.com/defencedog/orangepi4A/tree/main/kernels
 https://github.com/defencedog/orangepi3b_v2.1/blob/main/SAMBA_NAS_Videos.md
 ```
 sudo apt install -y smbclient gvfs-backends cifs-utils winbind
