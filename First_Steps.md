@@ -28,7 +28,7 @@ Next session will be under ukhan user. In Ubuntu system settings > users > manua
 ## Preparing GNOME
 ```
 sudo apt update && sudo apt dist-upgrade -y
-sudo apt install gnome-shell-extensions dconf-editor -y
+sudo apt install sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager dconf-editor gnome-terminal -y
 ```
 ### Make workspaces only x2
 Use `dconf-editor`
