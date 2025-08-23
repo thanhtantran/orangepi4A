@@ -10,7 +10,7 @@ usermod -d /home/ukhan -m -g ukhan -l ukhan orangepi
 reboot
 # still in root session
 ```
-Look at these files `nano if there is any orangepi entry`
+Look at these files `nano` if there is any `orangepi` entry replace with `ukhan`
 > /etc/group
 > 
 > /etc/shadow
