@@ -22,10 +22,22 @@ Finally
 ```
 passwd #change desired root password
 desktop_login.sh ukhan
-passwd #follow prompts to change ukhan password
 reboot
 ```
 Next session will be under ukhan user. In Ubuntu system settings > users > manually edit orangepi to ukhan. Use `passwd` to set new user password
+## Preparing GNOME
+```
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install gnome-shell-extensions dconf-editor -y
+```
+### Make workspaces only x2
+Use `dconf-editor`
+> https://unix.stackexchange.com/questions/490847/set-static-number-of-workspaces-in-gnome-shell-with-dconf
+## SAMBA support
+https://github.com/defencedog/orangepi3b_v2.1/blob/main/SAMBA_NAS_Videos.md
+```
+sudo apt install -y smbclient gvfs-backends cifs-utils winbind
+```
 ## Update GPU
 **There are some held packages `apt-mark showhold` do not unhold these**
 Add following x2 *ppas* & do `apt full-upgrade`
@@ -38,9 +50,6 @@ sudo apt full-upgrade
 sudo reboot
 sudo apt install clapper ffmpeg mpv chromium chrome-browser libv4l-rkmpp gstreamer1.0-rockchip1 kodi
 ```
-## Make workspaces only x2
-Use `dconf-editor`
-> https://unix.stackexchange.com/questions/490847/set-static-number-of-workspaces-in-gnome-shell-with-dconf
 ## Install PiApps
 `wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash` & the install in a queue form all applications required
 
