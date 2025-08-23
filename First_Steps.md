@@ -1,4 +1,3 @@
-to# OPi4a
 ## Change username 
 ```
 sudo auto_login_cli.sh root
@@ -53,6 +52,7 @@ sudo apt install clapper ffmpeg mpv chromium chrome-browser libv4l-rkmpp gstream
 ```
 ## Install PiApps
 `wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash` & the install in a queue form all applications required
+Warning `balena-etcher` from Pi-Apps is buggy
 
 ## Libreoffice Latest
 ```
@@ -91,7 +91,7 @@ modification inside a function
 ```
 ## Compilation Environment
 ### Linux based
-`sudo apt install build-essential cmake autoconf meson`
+`sudo apt install build-essential cmake autoconf meson libgail-common`
 ### .Net8.x
 ```
 cd ~/Downloads
