@@ -1,4 +1,4 @@
-# OPi4a
+to# OPi4a
 ## Change username 
 ```
 sudo auto_login_cli.sh root
