@@ -11,3 +11,6 @@ These kernerls can be used with official `jammy` image v1.0.4
 
 ## Update #1
 Packages have been updated to resolve bluetooth connectivity issue with mouse / keyboards because of the absence of `UHID` module. Details here https://github.com/defencedog/orangepi4A/blob/main/Bluetooth%20Mouse%20Not%20Working%20Solved.md
+## Update #2
+`twingate` client is not running! Superficially it appears the probleim is because of a [twingate bug](https://help.twingate.com/hc/en-us/articles/21042455954845--Linux-Client-Unable-to-authenticate-on-Ubuntu-24-04) which is also affecting Ubuntu 22. However logs via `sudo journalctl -u twingate --since "1 hour ago"` indicate actual problem is missing kernel module _tun_ as described [here](https://forums.raspberrypi.com/viewtopic.php?t=262317) The module is added & kernel is recompiled, otherwise, persistent error you will get while connecting `twingate` is 
+> /dev/net/tun, error: 'No such file or directory'
