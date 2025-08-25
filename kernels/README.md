@@ -4,6 +4,8 @@ These `.debs` can be installed as I have included multiple missing features. In 
 1. `cifs` support is added. In default kernel you cannot mount a samba shared directory!
 2. `nfs` support is added
 3. `binfmt_misc` filesystem support is added ~still missing. So you cannot run `box86` applications. I will latter add it.~
+4. VPN service module *tun* is added
+5. Wireguard module is added
 
 > https://github.com/defencedog/orangepi3b_v2.1/blob/main/SAMBA_NAS_Videos.md
 
