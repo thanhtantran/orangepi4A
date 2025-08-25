@@ -17,7 +17,7 @@ Where XX:XX:XX:XX:XX:XX is the bluetooth address for the mouse. After some diggi
 CONFIG_UHID=y
 ```
 ## Solution
-The config file is located at `orangepi-build/external/config/kernel/linux-5.15-sun55iw3-current.config` You can also enable Microsoft / A4Tech HID stuff. Before running `build.sh` do this to make changes in kernel config file permanent
+The config file is located at `orangepi-build/external/config/kernel/linux-5.15-sun55iw3-current.config` You can also enable Microsoft / A4Tech HID stuff. Before running `sudo ./build.sh BOARD=orangepi4a BRANCH=current BUILD_OPT=kernel KERNEL_CONFIGURE=no` do this to make changes in kernel config file permanent
 ```
 sudo nano orangepi-build/userpatches/config-default.conf
 IGNORE_UPDATES="yes"
