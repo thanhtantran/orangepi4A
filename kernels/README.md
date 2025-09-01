@@ -1,4 +1,8 @@
 # Custom Compiled from OrangePI Build Framework
+## Method
+Set the *IGNORE_UPDATES* variable in `userpatches/config-default.conf` to `yes`. Overwrite or modify `external/config/kernel/linux-5.15-sun55iw3-current.config`
+Build command: `sudo ./build.sh  BOARD=orangepi4a BRANCH=current BUILD_OPT=kernel KERNEL_CONFIGURE=no`
+## Features
 These `.debs` can be installed as I have included multiple missing features. In the default kernel x3 important features (filesystem support) are missing
 
 1. `cifs` support is added. In default kernel you cannot mount a samba shared directory!
