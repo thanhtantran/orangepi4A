@@ -1,4 +1,0 @@
-Set the IGNORE_UPDATES variable in userpatches/config-default.conf to “yes”
-overwirte or modify external/config/kernel/linux-5.15-sun55iw3-current.config
-build command:
-sudo ./build.sh  BOARD=orangepi4a BRANCH=current BUILD_OPT=kernel KERNEL_CONFIGURE=no
