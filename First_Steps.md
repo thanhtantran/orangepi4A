@@ -50,6 +50,8 @@ sudo apt full-upgrade
 sudo reboot
 sudo apt install clapper ffmpeg mpv chromium chrome-browser libv4l-rkmpp gstreamer1.0-rockchip1 kodi
 ```
+## Gnome Bug
+Do not remove or purge `gjs`!! Use instead `gnome-extensions disable ding@rastersoft.com` & task manager to manually kill it If there are files in ~/Desktop folder an  overlay of icon appears. Its a GNOME bug
 ## Install PiApps
 `wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash` & the install in a queue form all applications required
 Warning `balena-etcher` from Pi-Apps is buggy
